@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java-agent.iml" filepath="$PROJECT_DIR$/java-agent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-before-jvm-agent/simple-before-jvm-agent.iml" filepath="$PROJECT_DIR$/simple-before-jvm-agent/simple-before-jvm-agent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/target/target.iml" filepath="$PROJECT_DIR$/target/target.iml" />
+    </modules>
+  </component>
+</project>
