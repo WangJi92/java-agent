@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java-agent" target="1.8" />
-      <module name="simple-before-jvm-agent" target="1.6" />
+      <module name="simple-before-jvm-agent" target="1.8" />
       <module name="target-java" target="1.8" />
     </bytecodeTargetLevel>
   </component>

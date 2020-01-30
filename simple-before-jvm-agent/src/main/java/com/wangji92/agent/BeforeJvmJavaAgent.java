@@ -12,6 +12,8 @@ import java.lang.instrument.Instrumentation;
 public class BeforeJvmJavaAgent {
     public static void premain(String agentArgs, Instrumentation inst) {
         System.out.println("this is an agent.");
-        System.out.println("args:" + agentArgs + "\n");
+        log.info("this is an agent 和jvm 一起启动");
+        log.info("args:" + agentArgs + "\n");
+        log.info(inst.getAllLoadedClasses().toString());
     }
 }
