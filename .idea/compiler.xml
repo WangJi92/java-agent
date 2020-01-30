@@ -6,21 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="target-java" />
         <module name="simple-before-jvm-agent" />
-        <module name="target" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java-agent" target="1.8" />
       <module name="simple-before-jvm-agent" target="1.6" />
-      <module name="target" target="1.8" />
+      <module name="target-java" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="java-agent" options="-parameters" />
       <module name="simple-before-jvm-agent" options="-parameters" />
-      <module name="target" options="-parameters" />
+      <module name="target-java" options="-parameters" />
     </option>
   </component>
 </project>
