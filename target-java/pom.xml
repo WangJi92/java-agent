@@ -46,7 +46,7 @@
     </dependencies>
 
     <build>
-        <finalName>target.jar</finalName>
+        <finalName>target-java</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
