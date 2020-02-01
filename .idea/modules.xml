@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/java-agent.iml" filepath="$PROJECT_DIR$/java-agent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm-agent-aop/jvm-agent-aop.iml" filepath="$PROJECT_DIR$/jvm-agent-aop/jvm-agent-aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-before-jvm-agent/simple-before-jvm-agent.iml" filepath="$PROJECT_DIR$/simple-before-jvm-agent/simple-before-jvm-agent.iml" />
       <module fileurl="file://$PROJECT_DIR$/target-java/target-java.iml" filepath="$PROJECT_DIR$/target-java/target-java.iml" />
     </modules>

@@ -18,13 +18,26 @@
     <modules>
         <module>target-java</module>
         <module>simple-before-jvm-agent</module>
+        <module>jvm-agent-aop</module>
     </modules>
 
     <properties>
         <java.version>1.8</java.version>
+        <byte-buddy-version>1.10.6</byte-buddy-version>
     </properties>
     <dependencyManagement>
-
+        <dependencies>
+            <dependency>
+                <groupId>net.bytebuddy</groupId>
+                <artifactId>byte-buddy</artifactId>
+                <version>${byte-buddy-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.bytebuddy</groupId>
+                <artifactId>byte-buddy-agent</artifactId>
+                <version>${byte-buddy-version}</version>
+            </dependency>
+        </dependencies>
 
     </dependencyManagement>
 

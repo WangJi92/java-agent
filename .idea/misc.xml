@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/target/pom.xml" />
         <option value="$PROJECT_DIR$/simple-before-jvm-agent/pom.xml" />
+        <option value="$PROJECT_DIR$/jvm-agent-aop/pom.xml" />
       </list>
     </option>
   </component>

@@ -17,6 +17,11 @@ public class JavaAgentTargetController {
     @ResponseBody
     public String getClassName(@PathVariable String name) {
         String result = this.getClass().getSimpleName().concat(name);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+           //
+        }
         return result;
     }
 }
