@@ -5,6 +5,7 @@ java agent 的理解，实战
 * simple-before-jvm-agent   这个是一个简单的jvm agent 尝试
 * jvm-agent-aop  这个是一个通过byte-buddy 实现的一个controller 耗死统计的agent
 
+除了本项目之外也可以参考这个[demo-agent](https://github.com/hawkingfoo/demo-agent)
 ## 脚本介绍
 这里的尝试记录java agent都是通过脚本触发启动，这样方便理解java agent debug的处理方式，这个理解了理解[arthas debug](https://github.com/alibaba/arthas/issues/222)更加的容易
 * simple-before-jvm-agent.sh 就是一个简单的脚本启动一个agent，看一下脚本是否启动起来了
