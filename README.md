@@ -188,7 +188,7 @@ virtualMachine.loadAgent(arthasAgentPath,
 
 <a name="tzoM0"></a>
 ### 理解debug 
- [当我们谈Debug时，我们在谈什么(Debug实现原理)](https://mp.weixin.qq.com/s?__biz=MzI3MTEwODc5Ng==&mid=2650859362&idx=1&sn=6d0a588da10ebf38e9d83cfa4e7e16fa&chksm=f13298b1c64511a78e3a87df0f1ddebd87719a36a9335edd759c404cd5c53d65e9383da613f1&scene=21#wechat_redirect) 这篇文章被我引用了很多次，其实debug就是JPDA之上进行处理，Java agent 也是通过 Instrumentation 依赖JVMDI 实现对于JVM中的字节码修改，获取JVM 虚拟机的加载的字节码的信息，两者之间太像了，当我们想讨论如何debug java agnet的代码的时候，是否想过agent 和目标的代码有什么异同？对对，都是在同一个JVM中的。无论是我们使用远程debug 还是IDEA上的debug其实实质上都是建立在JPDA的基础上，JPDA（Java Platform Debugger Architecture）是Java平台调试体系结构的缩写。由3个规范组成，分别是JVMTI(JVM Tool Interface)，JDWP(Java Debug Wire Protocol)，JDI(Java Debug Interface) 。因此都是在一个JVM 里面的，只要目标class 启动的时候开启了debug，那么agent 也可以被debug的。可能在直接使用IDEA debug的时候有一些限制，比如必须在同级的module下面才能debug，那么远程debug就是天然的可以啦！
+ [当我们谈Debug时，我们在谈什么(Debug实现原理)](https://mp.weixin.qq.com/s?__biz=MzI3MTEwODc5Ng==&mid=2650859362&idx=1&sn=6d0a588da10ebf38e9d83cfa4e7e16fa&chksm=f13298b1c64511a78e3a87df0f1ddebd87719a36a9335edd759c404cd5c53d65e9383da613f1&scene=21#wechat_redirect) 这篇文章被我引用了很多次，其实debug就是JPDA之上进行处理，Java agent 也是通过 Instrumentation 依赖JVMTI 实现对于JVM中的字节码修改，获取JVM 虚拟机的加载的字节码的信息，两者之间太像了，当我们想讨论如何debug java agnet的代码的时候，是否想过agent 和目标的代码有什么异同？对对，都是在同一个JVM中的。无论是我们使用远程debug 还是IDEA上的debug其实实质上都是建立在JPDA的基础上，JPDA（Java Platform Debugger Architecture）是Java平台调试体系结构的缩写。由3个规范组成，分别是JVMTI(JVM Tool Interface)，JDWP(Java Debug Wire Protocol)，JDI(Java Debug Interface) 。因此都是在一个JVM 里面的，只要目标class 启动的时候开启了debug，那么agent 也可以被debug的。可能在直接使用IDEA debug的时候有一些限制，比如必须在同级的module下面才能debug，那么远程debug就是天然的可以啦！
 
 <a name="oT2yM"></a>
 ### 实战Agent debug(AOP 统计耗时)
