@@ -329,6 +329,8 @@ java -agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n \
 <a name="Iem3m"></a>
 ## 四、总结
 不断的学习、总结，才能理解更加的深刻。<br />代码地址：[https://github.com/WangJi92/java-agent](https://github.com/WangJi92/java-agent)
+
+* [java agent video](https://www.bilibili.com/video/av86342295/)
 > 更多[汪小哥](https://wangji.blog.csdn.net/)
 
 
